@@ -1,0 +1,8 @@
+# --- status: testing
+o the scripts to initial whole proxy pack. 
+o prerequisite: linux/osx - private pack available in path including
+        - _ssh_config
+        - authkeys
+o need to debug on osx
+
+
