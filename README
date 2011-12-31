@@ -1,1 +1,2 @@
 checkout: 
+        git clone git@github.com:autumnleaf/ttyn.me_code.git
