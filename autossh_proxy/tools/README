@@ -1,0 +1,6 @@
+* simple tool to test the status of sock5 proxy.
+
+* ###TODOs
+        ** use timeout to check actual connection
+        ** check actual pac file instead of the default url list
+        ** use system wide proxy setup (mac osx) to check the pac file usage

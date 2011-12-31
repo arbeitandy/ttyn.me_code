@@ -1,0 +1,8 @@
+Host first_proxy_host
+        User ###proxy_user_name###
+	Port ###PORT_NUMBER###
+	Hostname ###prox_host_name_or_ip###
+	IdentityFile ~/.ssh/id_rsa
+	UsePrivilegedPort no
+	ServerAliveInterval 240
+	ServerAliveCountMAx 9999

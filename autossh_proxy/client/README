@@ -1,0 +1,33 @@
+o init client env
+        ~ brew install autossh 
+        or port install autossh
+
+o put the emailed files on client (these files are confidentail therefore they are not in the source control
+        ~ cat ./ssh_config >> ~/.ssh/config ## or manually check and add the config section
+        ~ mv ./*_rsa* ~/.ssh/ && chmod 400 ~/.ssh/*_rsa*
+
+o test ssh connection (key auth)
+
+        ~ ssh first_proxy_host whoami
+        
+o Network Config [currently only graphical interface tested]
+        - System Preferences > Network > Edit Location >  * duplicate Location
+                > rename to "Proxied connection"
+        - Advanced > Proxies > Automatic Proxy Configuration >
+        - Proxy Configuration File (select the ./proxy.pac)
+
+o Usage:
+        ~ ./start_proxy.sh start # --- start the proxy and it will be there 
+        ~ ./start_proxy.sh status # --- need implementation, we only got pid right now
+        ~ ./start_proxy.sh stop # --- stop the proxy (autossh only, but no update of the networksetup, need implementation
+
+o Stop Proxy completely
+        ~ ./start_proxy.sh stop # --- stop the proxy (autossh only, but no update of the networksetup, need implementation
+        - System Preferences > Network > 
+                > delete  "Proxied connection"
+        
+o Ref:  http://www.proxypacfiles.com/proxypac/
+
+o Additional TODOs
+        - please use Chrome "Use HTTPS" extension
+                https://chrome.google.com/webstore/detail/kbkgnojednemejclpggpnhlhlhkmfidi
