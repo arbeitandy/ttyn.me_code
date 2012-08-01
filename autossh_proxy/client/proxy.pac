@@ -12,8 +12,6 @@ function FindProxyForURL(url, host) {
                 return proxy_yes;
         } else if (dnsDomainIs(host, ".apigee.com") || shExpMatch(host, "apigee.com")) {
                 return proxy_yes;
-        } else if (dnsDomainIs(host, ".runningahead.com") || shExpMatch(host, "runningahead.com")) {
-                return proxy_yes;
         } else if (dnsDomainIs(host, ".t.co") || shExpMatch(host, "t.co")) {
                 return proxy_yes;
         } else if (dnsDomainIs(host, ".youtube.com") || shExpMatch(host, "youtube.com")) {
@@ -49,8 +47,6 @@ function FindProxyForURL(url, host) {
         } else if (shExpMatch(host, "bit.ly")) {
                 return proxy_yes;
         } else if (shExpMatch(host, "dropbox")) {
-                return proxy_yes;
-        } else if (shExpMatch(host, "ef.com")) {
                 return proxy_yes;
         }
         return proxy_no;
